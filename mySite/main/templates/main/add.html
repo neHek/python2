@@ -1,0 +1,19 @@
+{% extends "main/wrapper.html" %}
+
+
+{% block content %}
+
+<div>
+	<h1 style = 'text-align: center;'>Добавление</h1>
+</div>
+<div>
+	<a href = '../'>К просмотру</a>
+	<h1>New record</h1>
+	<h2>{{ans}}</h2>
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+	
+</div>
+{% endblock %}

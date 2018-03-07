@@ -5,9 +5,12 @@
 
 <div>
 	<h1 style = 'text-align: center;'>Спикеры конференции</h1>
+	<h5><a href = 'new/'>К добавлению</a></h5>
 </div>
 <div>
-	{% for post in object_list %}
+
+	{% for post in speak %}
+		
 		<h3>{{post.name}}</h3>
 		<p>Topic: {{post.topic}}</p>
 		<p>Description: {{post.descr}}</p>
