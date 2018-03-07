@@ -2,6 +2,11 @@
 
 
 {% block content %}
+
+<div>
+	<h1 style = 'text-align: center;'>Спикеры конференции</h1>
+</div>
+<div>
 	{% for post in object_list %}
 		<h3>{{post.name}}</h3>
 		<p>Topic: {{post.topic}}</p>
@@ -9,4 +14,5 @@
 		<p>Time: {{post.time}}</p>
 		</br>
 	{% endfor %}
+</div>
 {% endblock %}
