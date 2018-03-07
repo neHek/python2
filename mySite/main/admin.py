@@ -1,3 +1,4 @@
 from django.contrib import admin
+from main.models import speakers
 
-# Register your models here.
+admin.site.register(speakers)

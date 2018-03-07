@@ -2,5 +2,11 @@
 
 
 {% block content %}
-<p>Ya Ivan</p>
+	{% for post in object_list %}
+		<h3>{{post.name}}</h3>
+		<p>Topic: {{post.topic}}</p>
+		<p>Description: {{post.descr}}</p>
+		<p>Time: {{post.time}}</p>
+		</br>
+	{% endfor %}
 {% endblock %}
