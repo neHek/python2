@@ -5,7 +5,7 @@ from main.models import Section
 admin.site.register(Section)
 
 def make_ivan(modeladmin, request, queryset):
-    queryset.update(name='Иван')
+    queryset.update(name='Иван Кокарев')
 
 
 class SpeakerAdmin(admin.ModelAdmin):
