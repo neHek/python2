@@ -11,5 +11,7 @@ def make_ivan(modeladmin, request, queryset):
 class SpeakerAdmin(admin.ModelAdmin):
     ordering = ['name']
     actions = [make_ivan]
+    list_filter=('sect',)
+    search_fields = ['name','topic','descr']
 
 admin.site.register(Speakers, SpeakerAdmin)
